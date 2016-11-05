@@ -10,3 +10,6 @@
 
 build/
 django_wechat_message.egg-info/
+
+# pypi login file
+.pypirc

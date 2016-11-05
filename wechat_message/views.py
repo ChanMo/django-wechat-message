@@ -11,7 +11,7 @@ def simulator(request):
         xml = request.POST['xml']
         api = Message()
         result = api.get_data(url, xml, 'string')
-        return HttpResponse(result)
+        return HttpResponse(result, content_type='text/xml')
 
 @csrf_exempt
 def index(request):
