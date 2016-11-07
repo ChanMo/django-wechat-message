@@ -10,9 +10,9 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as readme:
 setup(
     name = 'django-wechat-message',
 
-    version = '0.0.1',
+    version = '0.0.2',
 
-    description = 'first',
+    description = 'add locale',
     long_description = README,
 
     url = 'https://github.com/ChanMo/django-wechat-message/',
