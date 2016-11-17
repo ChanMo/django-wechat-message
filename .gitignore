@@ -1,12 +1,13 @@
 # python files
-*.pyc
+__pycache__
+*.py[cod]
 
 # django migrations files
-**/migrations
+migrations/
 
 # scss cache files
 *.css.map
-**/.sass-cache
+.sass-cache/
 
 build/
 django_wechat_message.egg-info/
