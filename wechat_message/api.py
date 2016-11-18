@@ -39,7 +39,7 @@ class Message(Base):
         return keyword
 
     def response(self, keyword, data):
-        if not MessageModel.objects.get(keyword=keyword).exists():
+        if not MessageModel.objects.filter(keyword=keyword).exists():
             keyword = 'default'
         try:
             message = MessageModel.objects.get(keyword=keyword)
