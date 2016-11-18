@@ -19,11 +19,14 @@ def index(request):
     try:
         """ First bind """
         echostr = request.GET['echostr']
+        """
         result = wx.check_sign(request.GET)
         if result:
             return HttpResponse(echostr)
         else:
             return HttpResponse('error')
+        """
+        return HttpResponse(echostr)
     except KeyError:
         """ Normal message """
         data = wx.receive(request.body)
